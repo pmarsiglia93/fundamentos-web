@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+body {
+    background-color: rgb(110, 94, 94);
+    color: #fcfcfc;
+}
+
+nav {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+}
+
+nav a {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 2 rem;
+}
+
+nav a:hover {
+    color: yellow;
+    text-decoration: underline;
+    transition: .5s ease-in-out;
+}
+
+#sobreMim {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobreGeral {
+    display: flex;
+    width: 80vw;
+    justify-content: space-between;
+}
+
+.texto {
+    width: 65%;
+    text-align: justify;
+    margin-top: 2rem;
+    display: block;
+    margin: 2rem auto 0;       
+}
+
+.perfil {
+    width: 250px;
+    height: 250px;    
+    border: 3px solid rgb(35, 160, 39);
+    border-radius: 50%;
+    margin: auto;
+}
+
+.perfil:hover {
+    transform: rotateY(180deg);
+}
+
+h2 {
+    margin-top: 2rem;
+}
+
+.video {
+    width:1080px;
+    height: 720px;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+}
+
+.contato {
+    display: flex;
+    width: 80vw;
+    margin: 0 auto;
+    min-height: 80vh;
+}
+
+.form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2{
+    text-align: center;
+}
+
+.form form {
+    width: 70%;
+    margin: 0 auto;
+}
+
+label{
+    text-align: left;
+}
+
+input, textarea{
+    width: 100%;
+    margin-bottom: 1.5rem;
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: 0;
+    color: #2f4538
+}
+
+button{
+    padding: 5px 1rem;
+    width: 40%;
+    margin: 0 auto;
+    display: block;
+    background-color: #151313;
+    border: 2px solid #fcfcfc;
+    border-radius: 8px;
+    color: #fcfcfc;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #fcfcfc;
+    color: #151313;
+}
+
+@media (max-width: 768px) {
+    .sobreGeral{
+        flex-direction: column-reverse;
+        width: 100vw;
+    }
+
+
+.texto{
+    width: 80vw;
+}
+
+.video{
+    width: 480px;
+    height: 480px;
+}
+
+.endereco{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+}
