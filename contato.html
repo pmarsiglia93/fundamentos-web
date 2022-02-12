@@ -8,6 +8,7 @@
     <title>Contato</title>
 
     <link rel="stylesheet" href="css/style.css">
+  
 </head>
 
 <body>
@@ -20,7 +21,6 @@
                 <li>Contato</li>
             </a>
         </ul>
-
     </nav>
 
     <section class="form">
@@ -29,17 +29,14 @@
 
         <form>
             <label for="nome">Nome:</label><br>
-            <input type="text" id="nome">
-            <br>
-            <br>
+            <input type="text" id="nome" onkeyup="valorNome()">
+        
             <label for="e-mail">E-mail:</label><br>
             <input type="email" id="email">
-            <br>
-            <br>
+           
             <label for="assunto">Assunto:</label><br>
             <textarea name="assunto" id="assunto" cols="60" rows="5"></textarea>
-            <br>
-            <br>
+           
             <button>Enviar</button>
         </form>
     </section>
@@ -58,6 +55,7 @@
         <p>Feito com carinho - Paulo Francisco Marsiglia</p>
     </footer>
 
+    <script src="Js/script.js"></script>
 
 </body>
 
